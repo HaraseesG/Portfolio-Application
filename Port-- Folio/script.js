@@ -127,8 +127,7 @@ app.controller("workCtrl", function($scope){
 		var imgText = document.getElementById('imgtext');
 
 		if (elementID == "./WorkAndSkills/martialArts.jpg"){
-
-			imgText.innerHTML = "Hey it works";
+			imgText.innerHTML = "<h4 id = 'textOne'>Teach self-defense, Jiu Jitsu, Kobudo, and Sparring along with focus, discipline, and life philosophy to children as young as 5</h4> <h5 id ='textTwo'>Key Experiences Include: Handling Payments, Phone Calls, and general customer service at front desk.</h5>";
 		}else if(elementID == "./WorkAndSkills/Hackathons/capitalonehack.jpg"){
 			imgText.innerHTML = "Okay not bad hotshot";
 		}else if(elementID == "./WorkAndSkills/business.jpg"){

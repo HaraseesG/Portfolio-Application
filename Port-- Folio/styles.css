@@ -47,8 +47,8 @@ div.container {
     z-index: 2;
     top: 85;
     background-color: black;
-    overflow-y: scroll;
-}
+/*    overflow-y: scroll;
+*/}
 
 #Highlights {
 	position: fixed;
@@ -210,7 +210,7 @@ header {
 }
 
 #expandedImg {
-	height: 850px;
+	height: 750px;
 }
 
 #imgtext {
