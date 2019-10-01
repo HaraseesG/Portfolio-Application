@@ -1,0 +1,50 @@
+<style type="text/css">
+		/* width */
+	::-webkit-scrollbar {
+	  width: 10px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+	  background: #f1f1f1; 
+	}
+	 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	  background: #888; 
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	  background: #555; 
+	}
+</style>
+
+
+<div class = "container">
+	
+	<div class = "overlayTwo" ng-controller= "workCtrl">
+
+		<div class="WorkSkillsRow">
+			<div class="column">
+				<img id="karateImg" ng-click= "changeImg('./WorkAndSkills/martialArts.jpg')" src="./WorkAndSkills/martialArts.jpg" alt="">
+			</div>
+			<div class="column">
+				<img id="databaseImg" ng-click= "changeImg('./WorkAndSkills/Hackathons/capitalonehack.jpg')" src="./WorkAndSkills/Hackathons/capitalonehack.jpg" alt="">
+			</div>
+			<div class="column">
+				<img id="businessImg" ng-click= "changeImg('./WorkAndSkills/business.jpg')" src="./WorkAndSkills/business.jpg" alt="">
+			</div>
+		</div>		
+
+		<div class="mainContainer">
+			<span onclick = "this.parentElement.style.display = 'none'" class = "closebtn">&times;</span>
+
+			<img id="expandedImg" style="width: 1470px">
+
+			<div id="imgtext"></div>
+		</div>
+
+	</div>
+
+</div>
