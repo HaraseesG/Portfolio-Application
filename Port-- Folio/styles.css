@@ -41,14 +41,25 @@ div.container {
 
 .overlayTwo {
     position: fixed;
-    width: 1575;
+    width: 1571;
     height: 1200;
     left: 25px;
     z-index: 2;
-    top: 85;
+    top: 50px;
     background-color: black;
 /*    overflow-y: scroll;
 */}
+
+.overlayThree {
+    position: fixed;
+    width: 1571;
+    height: 1200;
+    left: 25px;
+    z-index: 2;
+    top: 50px;
+    background-color: black;
+	overflow-y: scroll;	
+}
 
 #Highlights {
 	position: fixed;
@@ -117,9 +128,9 @@ header {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 130px;
+  padding: 19px 75px;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 10px;
   -webkit-app-region: no-drag;  
 }
 
@@ -127,6 +138,7 @@ header {
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+
 }
 
 /* Add an active class to highlight the current page */
