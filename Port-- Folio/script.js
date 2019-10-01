@@ -58,7 +58,14 @@ app.controller('headCtrl', function($scope, $location) {
 	};
 
 	$scope.openPDF = function(){
-		
+
+		var chosen = document.getElementById('resume');
+
+		if (!chosen.className == 'topnavElement active'){
+			chosen.className.replace('topnavElement', 'topnavElement active');
+			document.getElementsByClassName('topnavElement active').className.replace('topnavElement active', 'topnavElement');
+		}
+
 		const shell = require('electron').shell;
 		event.preventDefault();
 
