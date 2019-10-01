@@ -238,3 +238,46 @@ header {
 	font-size: 35px;
 	cursor: pointer;
 }
+
+.lineBreak {
+    position: relative;
+    background-color: orange;
+    height: 10px;
+    width: 1500px;
+    left: 30px;
+}
+
+.colOne {
+    width: 475px;
+}
+
+.colTwo {
+    width: 475px;
+    margin-left: 550;
+}
+
+.colThree {
+    width: 475px;
+    margin-left: 1100px;
+}
+
+.rowProject {
+    position: relative;
+    height: 300px;
+    width: 1550px;
+    left: 20px;
+    top: 20px;
+}
+
+#colOneUnique {
+	position: absolute;
+	width: 475px;
+	left: 300px;
+}
+
+#colTwoUnique {
+    position: absolute;
+    width: 475px;
+    top: 0;
+    left: 900px;
+}

@@ -8,6 +8,7 @@ let win;
 function createWindow(){
 	win = new BrowserWindow({
 		frame: false,
+		icon: './Home/moi.jpg',
 		webPreferences: {
 			plugins: true
 		}
