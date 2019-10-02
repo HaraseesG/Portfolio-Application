@@ -53,15 +53,15 @@ div.container {
 }
 
 .overlayThree {
-	font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
     position: fixed;
     width: 1571;
-    height: 1200;
+    height: calc(100% - 19px);
     left: 25px;
     z-index: 2;
     top: 50px;
     background-color: white;
-	overflow-y: scroll;	
+    overflow-y: scroll;
 }
 
 .overlayFour {
@@ -364,9 +364,9 @@ header {
 
 .colTwo h4 {
     position: relative;
-    top: 200px;
-    left: 100px;
-    font-size: 16px;
+    top: 100px;
+    left: 25px;
+    font-size: 20px;
     text-align: left;
     color: #8c8c8c;
 }
@@ -378,17 +378,16 @@ header {
 
 .colOneofThree {
 	position: relative;
-	left: 25px;
 }
 
-.colOneofThree {
+.colTwoofThree {
 	position: relative;
-	left: 225px;
+	left: 540px;
 }
 
-.colOneofThree {
+.colThreeofThree {
 	position: relative;
-	left: 525px;
+	left: 1075px;
 }
 
 .rowProject {
@@ -399,16 +398,53 @@ header {
     top: 20px;
 }
 
+.projectRow {
+    position: relative;
+    height: 350px;
+    width: 1550px;
+    left: 20px;
+    top: 20px;
+}
+
+.projectRowUnique h3 {
+	font-size: 16px;
+	color: #8c8c8c;
+}
+
+.rowProjectUnique {
+    position: relative;
+    height: 150px;
+    width: 1550px;
+    text-align: center;
+}
+
+.rowProjectUnique h3 {
+	font-size: 16px;
+	color: #8c8c8c;
+}
+
+.twoRowProjectUnique {
+    position: relative;
+    height: 300px;
+    width: 1550px;
+    text-align: center;
+}
+
+.twoRowProjectUnique h3 {
+	font-size: 16px;
+	color: #8c8c8c;
+}
+
 #colOneUnique {
-	position: absolute;
+	position: relative;
 	width: 475px;
-	left: 300px;
+	left: 200px;
 }
 
 #colTwoUnique {
-    position: absolute;
+    position: relative;
     width: 475px;
-    top: 0;
+    bottom: 250px;
     left: 900px;
 }
 
@@ -442,7 +478,7 @@ header {
 #sudokuTwo {
 }
 
-#consciousness, #bully, #debate, #imageOne, #imageTwo, #imageThree, #sudokuOne, #sudokuTwo {
+#consciousness, #bully, #debate, #imageOne, #imageTwo, #imageThree, #sudokuOne, #sudokuTwo, #slideShow {
 	height: 250px;
     width: 500px;
 }
@@ -461,9 +497,8 @@ header {
 
 #slide {
     width: 1400px;
-    height: 700px;
+    height: 800px;
     margin-left: 85px;
-    margin-top: 5px;
 }
 
 .overlayFour h3 {

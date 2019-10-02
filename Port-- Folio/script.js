@@ -124,6 +124,43 @@ app.controller("workCtrl", function($scope){
 });
 
 app.controller("projectCtrl", function($scope){	
+	var i = 0;
+
+	$scope.$on('$viewContentLoaded', function(){
+		var images = [];
+
+		images = ['./ResearchAndProjects/Images/RI3D/one.jpg', './ResearchAndProjects/Images/RI3D/two.jpg', './ResearchAndProjects/Images/RI3D/three.jpg', './ResearchAndProjects/images/RI3D/four.jpg', './ResearchAndProjects/Images/RI3D/five.jpg', './ResearchAndProjects/Images/RI3D/six.jpg', './ResearchAndProjects/Images/RI3D/seven.jpg',]
+
+		document.getElementById('slideShow').src = images[i];
+
+		if (i < images.length - 1){
+			i++;
+		}else {
+			i = 0;
+		}
+
+		setTimeout(function(){ //Note to self: setTimeout is asynchroneous so don't pass a function in. Call a function that calls your function
+			$scope.imgSlideOne()
+		}, 3000);	
+	});
+
+	$scope.imgSlideOne = function(){
+		var images = [];
+
+		images = ['./ResearchAndProjects/Images/RI3D/one.jpg', './ResearchAndProjects/Images/RI3D/two.jpg', './ResearchAndProjects/Images/RI3D/three.jpg', './ResearchAndProjects/images/RI3D/four.jpg', './ResearchAndProjects/Images/RI3D/five.jpg', './ResearchAndProjects/Images/RI3D/six.jpg', './ResearchAndProjects/Images/RI3D/seven.jpg',]
+
+		document.getElementById('slideShow').src = images[i];
+
+		if (i < images.length - 1){
+			i++;
+		}else {
+			i = 0;
+		}
+
+		setTimeout(function(){ //Note to self: setTimeout is asynchroneous so don't pass a function in. Call a function that calls your function
+			$scope.imgSlideOne()
+		}, 3000);	
+	};
 
 });
 
