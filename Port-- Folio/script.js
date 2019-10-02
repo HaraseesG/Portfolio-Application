@@ -119,20 +119,6 @@ app.controller("workCtrl", function($scope){
 
 		expandImg.src = file;
 		expandImg.parentElement.style.display = 'block';
-
-		$scope.changeText(file);
-	};
-
-	$scope.changeText = function(elementID){
-		var imgText = document.getElementById('imgtext');
-
-		if (elementID == "./WorkAndSkills/martialArts.jpg"){
-			imgText.innerHTML = "<h4 id = 'textOne'>Teach self-defense, Jiu Jitsu, Kobudo, and Sparring along with focus, discipline, and life philosophy to children as young as 5</h4> <h5 id ='textTwo'>Key Experiences Include: Handling Payments, Phone Calls, and general customer service at front desk.</h5>";
-		}else if(elementID == "./WorkAndSkills/Hackathons/capitalonehack.jpg"){
-			imgText.innerHTML = "<h4 id = 'textOne'>Participated in multiple hackathons to build database systems using: </h4> <h5 id ='textTwo'>Key Experiences Include: HTML, CSS, ReactJS, NodeJS, AngularJS, Electron, MYSQL</h5>";
-		}else if(elementID == "./WorkAndSkills/business.jpg"){
-			imgText.innerHTML = "<h4 id = 'textOne'>Ran a general landscaping business which included cleaning windows, siding, eavestroughs, powerwashing, gardening, as well as door-to-door marketing.</h4> <h6 id ='textTwo'>Key experiences: Customer Relations, intensive organizational skills with use of MS Excel and Google Spreadsheets, enhanced problem solving even in unforseen circumstances.</h6>";
-		}
 	};
 
 });
