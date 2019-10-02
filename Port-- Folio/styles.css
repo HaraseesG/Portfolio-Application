@@ -46,9 +46,9 @@ div.container {
     left: 25px;
     z-index: 2;
     top: 50px;
-    background-color: black;
-/*    overflow-y: scroll;
-*/}
+    background-color: lightgrey;
+    overflow-y: scroll;
+}
 
 .overlayThree {
     position: fixed;
@@ -106,8 +106,10 @@ li {
 	margin: 5px;
 }
 
-#moi {
-	border-radius: 70%;
+#myself {
+    border-radius: 30%;
+    position: absolute;
+    margin-top: -75px;
 }
 
 header {
@@ -232,21 +234,27 @@ header {
 }
 
 #expandedImg {
-	height: 750px;
+    height: 750px;
+    position: relative;
+    bottom: 625px;
+    right: 25px;
 }
 
 #imgtext {
 	position: absolute;
-	color: white;
+	color: black;
 	font-size: 40px;
+	bottom: 400px;
+	text-align: center;
 }
 
 .closebtn {
-	position: absolute;
-	right: 15px;
-	color: white;
-	font-size: 35px;
-	cursor: pointer;
+    position: relative;
+    left: 1450;
+    bottom: 1375;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
 }
 
 .lineBreak {
@@ -292,7 +300,7 @@ header {
     left: 900px;
 }
 
-#consciousness {
+/*#consciousness {
 }
 
 #bully {
@@ -302,7 +310,7 @@ header {
 }
 
 #imageOne {
-}
+}*/
 
 #imageTwo {
     position: relative;
@@ -344,4 +352,110 @@ header {
     height: 700px;
     margin-left: 85px;
     margin-top: 5px;
+}
+
+.overlayFour h3 {
+	text-align: center;
+	position: relative;
+	top: 15px;
+}
+
+.skills {
+    width: 800px;
+    position: relative;
+    margin-top: 425px;
+    margin-left: 350px;
+}
+
+.skills h1 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 40px;
+}
+
+.skills h2 {
+	text-align: left;	
+}
+
+.line {
+	height: 25px;
+	min-width: 800px;
+	margin: 0 auto 10px;
+	line-height: 25px;
+	font-size: 14px;
+	color: #fff;
+	padding: 0 0 0 10px;
+	position: relative; 
+}
+
+.line:before {
+	content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	height: 25px;
+	top: 0;
+	z-index: -2;
+	background: black;
+}
+
+.line:after {
+	content: '';
+	background: orange;
+	height: 25px;
+	transition: 0.8s;
+	display: block;
+	width: 100%;
+	animation: animate 1 4s;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.line1:after {
+	max-width: 90%
+}
+
+.line2:after {
+	max-width: 70%
+}
+
+.line3:after {
+	max-width: 90%
+}
+
+.line4:after {
+	max-width: 90%
+}
+
+.line5:after {
+	max-width: 85%
+}
+
+.line6:after {
+	max-width: 15%
+}
+
+.line7:after {
+	max-width: 20%
+}
+
+.line8:after {
+	max-width: 70%
+}
+
+.line9:after {
+	max-width: 60%
+}
+
+
+@keyframe animate {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 100%;
+	}
 }
