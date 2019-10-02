@@ -144,6 +144,24 @@ app.controller("projectCtrl", function($scope){
 app.controller("achievementsCtrl", function($scope){	
 	var i = 0;
 
+	$scope.$on('$viewContentLoaded', function(){
+		var images = [];
+
+		images = ['./Achievements/images/medals.jpg', './Achievements/images/trophies.jpg', './Achievements/images/awards.jpg']
+
+		document.getElementById('slide').src = images[i];
+
+		if (i < images.length - 1){
+			i++;
+		}else {
+			i = 0;
+		}
+
+		setTimeout(function(){ //Note to self: setTimeout is asynchroneous so don't pass a function in. Call a function that calls your function
+			$scope.imgSlide()
+		}, 5000);	
+	});
+
 	$scope.imgSlide = function(){
 		var images = [];
 
@@ -161,10 +179,6 @@ app.controller("achievementsCtrl", function($scope){
 			$scope.imgSlide()
 		}, 5000);	
 	};
-
-});
-
-app.controller("extraCtrl", function($scope){	
 
 });
 
