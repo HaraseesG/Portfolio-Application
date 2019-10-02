@@ -57,8 +57,18 @@ div.container {
     left: 25px;
     z-index: 2;
     top: 50px;
-    background-color: black;
+    background-color: lightgrey;
 	overflow-y: scroll;	
+}
+
+.overlayFour {
+    position: fixed;
+    width: 1571;
+    height: 1200;
+    left: 25px;
+    z-index: 2;
+    top: 50px;
+    background-color: lightgrey;
 }
 
 #Highlights {
@@ -280,4 +290,58 @@ header {
     width: 475px;
     top: 0;
     left: 900px;
+}
+
+#consciousness {
+}
+
+#bully {
+}
+
+#debate {
+}
+
+#imageOne {
+}
+
+#imageTwo {
+    position: relative;
+    bottom: 250px;
+    right: 20px;
+}
+
+#imageThree {
+    position: relative;
+    bottom: 500px;
+    right: 40px;
+}
+
+#sudokuOne {
+}
+
+#sudokuTwo {
+}
+
+#consciousness, #bully, #debate, #imageOne, #imageTwo, #imageThree, #sudokuOne, #sudokuTwo {
+	height: 250px;
+    width: 500px;
+}
+
+.rowProject h3 {
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+}
+
+#rowProjectUnique {
+	text-align: center;
+	position: relative;
+	bottom: 0px;
+}
+
+#slide {
+    width: 1400px;
+    height: 700px;
+    margin-left: 85px;
+    margin-top: 5px;
 }
