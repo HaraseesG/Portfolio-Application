@@ -209,9 +209,34 @@ app.controller("achievementsCtrl", function($scope){
 	$scope.$on('$viewContentLoaded', function(){
 		var images = [];
 
-		images = ['./Achievements/images/medals.jpg', './Achievements/images/trophies.jpg', './Achievements/images/awards.jpg']
+		images = ['./Achievements/images/medals.jpg', './Achievements/images/trophies.jpg', './Achievements/images/awards.jpg', './Achievements/images/scholar.jpg', './Achievements/images/shodan.jpg', './Achievements/images/kobudo.jpg', './Achievements/images/nidan.jpg', ]
 
 		document.getElementById('slide').src = images[i];
+
+		var slideText = document.getElementById('slideText');
+
+		if (i === 0) {
+			slideText.innerHTML = "Multiple Medals from Martial Arts Tournaments, Wrestling Tournaments, and Speech Competitions.";
+			textText.innerHTML = "Competed in multiple Martial Arts Tournaments over the years and continue to compete actively. I competed in wrestling tournaments for two of my four high school years to improve my takedown abilities as a Jiu Jitsu artist. Won multiple speech awards: Two for best speech , one for funniest, and I am unoffically recognized in Ontario Tech's ToastMaster's club as having the best icebreaker speech out of anyone in the group so far.";
+		}else if (i === 1){
+			slideText.innerHTML = "Multiple Trophies from Martial Arts Tournaments";
+			textText.innerHTML = "Competed in multiple open tournaments (outside of Ontario and inside with people from other dojos).";
+		}else if (i === 2){
+			slideText.innerHTML = "Awards for Honor Roll from my High School";
+			textText.innerHTML = "Achieved a percentage of 80% or higher for most of my highschool career.";
+		}else if (i === 3){
+			slideText.innerHTML = "Recognized by Ontario as an Ontario Scholar.";
+			textText.innerHTML = "Achieved an 80% in six Grade 12 University Preparation courses.";
+		}else if (i === 4){
+			slideText.innerHTML = "Achieved First Degree Black Belt in Goju Ryu Karate";
+			textText.innerHTML = "Worked 10 years with blood, sweat, and tears for my first degree black belt. This is easily one of my greatest achievement by far. It was a test of physical, mental, and psychological ability and taught me a lot about getting back up after falling and hitting twice as hard.";
+		}else if (i === 5){
+			slideText.innerHTML = "Achieved First Degree Black Belt in Kobudo";
+			textText.innerHTML = "Worked with weapons while I was training for my first degree black belt. Graded for this title a year after I got my first degree black belt and learnt how to use a weapon but also how the laws of the universe constrain the objects within it. Every weapon has a special quirk because of the laws of the universe and it teaches one quite a lot about oneself.";
+		}else if (i === 6){
+			slideText.innerHTML = "Achieved Second Degree Black Belt in Goju Ryu Karate";
+			textText.innerHTML = "This is the only achievement that outclasses my first degree black belt. I graded for this belt two years after my original black belt grading and in those two years I put twice the effort in than all of my 10 years of training prior. I also was leaving for university this year so the pressure built by the time constraint was intensive. The difference in ability from first degree to second taught me that if I put the effort into anything I can surpass any obstacle that appears before me.";
+		}
 
 		if (i < images.length - 1){
 			i++;
@@ -221,15 +246,38 @@ app.controller("achievementsCtrl", function($scope){
 
 		setTimeout(function(){ //Note to self: setTimeout is asynchroneous so don't pass a function in. Call a function that calls your function
 			$scope.imgSlide()
-		}, 3000);	
+		}, 6000);	
 	});
 
 	$scope.imgSlide = function(){
 		var images = [];
 
-		images = ['./Achievements/images/medals.jpg', './Achievements/images/trophies.jpg', './Achievements/images/awards.jpg']
+		images = ['./Achievements/images/medals.jpg', './Achievements/images/trophies.jpg', './Achievements/images/awards.jpg', './Achievements/images/scholar.jpg', './Achievements/images/shodan.jpg', './Achievements/images/kobudo.jpg', './Achievements/images/nidan.jpg', ]
 
 		document.getElementById('slide').src = images[i];
+
+		if (i === 0) {
+			slideText.innerHTML = "Multiple Medals from Martial Arts Tournaments, Wrestling Tournaments, and Speech Competitions.";
+			textText.innerHTML = "Competed in multiple Martial Arts Tournaments over the years and continue to compete actively. I competed in wrestling tournaments for two of my four high school years to improve my takedown abilities as a Jiu Jitsu artist. Won multiple speech awards: Two for best speech , one for funniest, and I am unoffically recognized in Ontario Tech's ToastMaster's club as having the best icebreaker speech out of anyone in the group so far.";
+		}else if (i === 1){
+			slideText.innerHTML = "Multiple Trophies from Martial Arts Tournaments";
+			textText.innerHTML = "Competed in multiple open tournaments which are just tournaments hosted with people from other dojos.";
+		}else if (i === 2){
+			slideText.innerHTML = "Awards for Honor Roll from my High School";
+			textText.innerHTML = "Achieved a percentage of 80% or higher for most of my highschool career.";
+		}else if (i === 3){
+			slideText.innerHTML = "Recognized by Ontario as an Ontario Scholar.";
+			textText.innerHTML = "Achieved an 80% in six Grade 12 University Preparation courses.";
+		}else if (i === 4){
+			slideText.innerHTML = "Achieved First Degree Black Belt in Goju Ryu Karate";
+			textText.innerHTML = "Worked 10 years with blood, sweat, and tears for my first degree black belt. This is easily one of my greatest achievement by far. It was a test of physical, mental, and psychological ability and taught me a lot about getting back up after falling and hitting twice as hard.";
+		}else if (i === 5){
+			slideText.innerHTML = "Achieved First Degree Black Belt in Kobudo";
+			textText.innerHTML = "Worked with weapons while I was training for my first degree black belt. Graded for this title a year after I got my first degree black belt and learnt how to use a weapon but also how the laws of the universe constrain the objects within it. Every weapon has a special quirk because of the laws of the universe and it teaches one quite a lot about oneself.";
+		}else if (i === 6){
+			slideText.innerHTML = "Achieved Second Degree Black Belt in Goju Ryu Karate";
+			textText.innerHTML = "This is the only achievement that outclasses my first degree black belt. I graded for this belt two years after my original black belt grading and in those two years I put twice the effort in than all of my 10 years of training prior. I also was leaving for university this year so the pressure built by the time constraint was intensive. The difference in ability from first degree to second taught me that if I put the effort into anything I can surpass any obstacle that appears before me.";
+		}
 
 		if (i < images.length - 1){
 			i++;
@@ -239,7 +287,7 @@ app.controller("achievementsCtrl", function($scope){
 
 		setTimeout(function(){ //Note to self: setTimeout is asynchroneous so don't pass a function in. Call a function that calls your function
 			$scope.imgSlide()
-		}, 3000);	
+		}, 6000);	
 	};
 
 });
