@@ -246,7 +246,7 @@ app.controller("achievementsCtrl", function($scope){
 
 		setTimeout(function(){ //Note to self: setTimeout is asynchroneous so don't pass a function in. Call a function that calls your function
 			$scope.imgSlide()
-		}, 6000);	
+		}, 8000);	
 	});
 
 	$scope.imgSlide = function(){
