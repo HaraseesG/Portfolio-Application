@@ -4,8 +4,11 @@
   "description": "A portfolio app for myself which can also be rewritten to take data from a database containing multiple person's information to make this a portfolio app for many.",
   "main": "index.js",
   "scripts": {
-  	"start": "electron ."
+    "start": "electron ."
   },
   "author": "Harasees Singh Gill",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "electron-packager": "^14.0.6"
+  }
 }
