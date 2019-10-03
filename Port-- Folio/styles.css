@@ -291,12 +291,6 @@ header {
     bottom: 300px;
 }
 
-/*.WorkSkillsRow:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-*/
 .mainContainer {
     position: relative;
     display: none;
@@ -425,7 +419,7 @@ header {
 
 .twoRowProjectUnique {
     position: relative;
-    height: 300px;
+    height: 100px;
     width: 1550px;
     text-align: center;
 }

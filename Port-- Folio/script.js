@@ -124,37 +124,76 @@ app.controller("workCtrl", function($scope){
 });
 
 app.controller("projectCtrl", function($scope){	
-	var i = 0;
+	var x, y, z, w = 0;
 
 	$scope.$on('$viewContentLoaded', function(){
-		var images = [];
+		var imagesOne, imagesTwo, imagesThree = [];
 
-		images = ['./ResearchAndProjects/Images/RI3D/one.jpg', './ResearchAndProjects/Images/RI3D/two.jpg', './ResearchAndProjects/Images/RI3D/three.jpg', './ResearchAndProjects/images/RI3D/four.jpg', './ResearchAndProjects/Images/RI3D/five.jpg', './ResearchAndProjects/Images/RI3D/six.jpg', './ResearchAndProjects/Images/RI3D/seven.jpg',]
+		imagesOne = ['./ResearchAndProjects/Images/RI3D/one.jpg', './ResearchAndProjects/Images/RI3D/two.jpg', './ResearchAndProjects/Images/RI3D/three.jpg', './ResearchAndProjects/images/RI3D/four.jpg', './ResearchAndProjects/Images/RI3D/five.jpg', './ResearchAndProjects/Images/RI3D/six.jpg', './ResearchAndProjects/Images/RI3D/seven.jpg',]
+		imagesTwo = ['./ResearchAndProjects/Images/imageOne.png', './ResearchAndProjects/Images/imageTwo.png', './ResearchAndProjects/Images/imageThree.png'];
+		imagesThree = ['./ResearchAndProjects/Images/sudokuOne.png', './ResearchAndProjects/Images/sudokuTwo.png'];
 
-		document.getElementById('slideShow').src = images[i];
+		document.getElementById('slideShow').src = imagesOne[x];
+		document.getElementById('imageOne').src = imagesTwo[y];
+		document.getElementById('sudoku').src = imagesThree[z];
 
-		if (i < images.length - 1){
-			i++;
+		if (x < imagesOne.length - 1){
+			x++;
 		}else {
-			i = 0;
+			x = 0;
+		}
+
+		if (y < imagesTwo.length - 1){
+			y++;
+		}else {
+			y = 0;
+		}
+
+		if (z < imagesThree.length - 1){
+			z++;
+		}else {
+			z = 0;
 		}
 
 		setTimeout(function(){ //Note to self: setTimeout is asynchroneous so don't pass a function in. Call a function that calls your function
 			$scope.imgSlideOne()
 		}, 3000);	
 	});
-
 	$scope.imgSlideOne = function(){
-		var images = [];
+		var imagesOne, imagesTwo, imagesThree, imagesFour = [];
 
-		images = ['./ResearchAndProjects/Images/RI3D/one.jpg', './ResearchAndProjects/Images/RI3D/two.jpg', './ResearchAndProjects/Images/RI3D/three.jpg', './ResearchAndProjects/images/RI3D/four.jpg', './ResearchAndProjects/Images/RI3D/five.jpg', './ResearchAndProjects/Images/RI3D/six.jpg', './ResearchAndProjects/Images/RI3D/seven.jpg',]
+		imagesOne = ['./ResearchAndProjects/Images/RI3D/one.jpg', './ResearchAndProjects/Images/RI3D/two.jpg', './ResearchAndProjects/Images/RI3D/three.jpg', './ResearchAndProjects/images/RI3D/four.jpg', './ResearchAndProjects/Images/RI3D/five.jpg', './ResearchAndProjects/Images/RI3D/six.jpg', './ResearchAndProjects/Images/RI3D/seven.jpg',]
+		imagesTwo = ['./ResearchAndProjects/Images/imageOne.png', './ResearchAndProjects/Images/imageTwo.png', './ResearchAndProjects/Images/imageThree.png'];
+		imagesThree = ['./ResearchAndProjects/Images/sudokuOne.png', './ResearchAndProjects/Images/sudokuTwo.png'];
+		imagesFour = ['./ResearchAndProjects/Images/This/one.png', './ResearchAndProjects/Images/This/two.png', './ResearchAndProjects/Images/This/three.png', './ResearchAndProjects/Images/This/four.png', './ResearchAndProjects/Images/This/five.png', './ResearchAndProjects/Images/This/six.png', './ResearchAndProjects/Images/This/seven.png', './ResearchAndProjects/Images/This/eight.png', './ResearchAndProjects/Images/This/nine.png', './ResearchAndProjects/Images/This/ten.png', './ResearchAndProjects/Images/This/eleven.png', './ResearchAndProjects/Images/This/twelve.png', './ResearchAndProjects/Images/This/thirteen.png'];
 
-		document.getElementById('slideShow').src = images[i];
+		document.getElementById('slideShow').src = imagesOne[x];
+		document.getElementById('imageOne').src = imagesTwo[y];
+		document.getElementById('sudoku').src = imagesThree[z];
+		document.getElementById('thisProject').src = imagesFour[w];
 
-		if (i < images.length - 1){
-			i++;
+		if (x < imagesOne.length - 1){
+			x++;
 		}else {
-			i = 0;
+			x = 0;
+		}
+
+		if (y < imagesTwo.length - 1){
+			y++;
+		}else {
+			y = 0;
+		}
+
+		if (z < imagesThree.length - 1){
+			z++;
+		}else {
+			z = 0;
+		}
+
+		if (w < imagesFour.length - 1){
+			w++;
+		}else {
+			w = 0;
 		}
 
 		setTimeout(function(){ //Note to self: setTimeout is asynchroneous so don't pass a function in. Call a function that calls your function
@@ -182,7 +221,7 @@ app.controller("achievementsCtrl", function($scope){
 
 		setTimeout(function(){ //Note to self: setTimeout is asynchroneous so don't pass a function in. Call a function that calls your function
 			$scope.imgSlide()
-		}, 5000);	
+		}, 3000);	
 	});
 
 	$scope.imgSlide = function(){
@@ -200,7 +239,7 @@ app.controller("achievementsCtrl", function($scope){
 
 		setTimeout(function(){ //Note to self: setTimeout is asynchroneous so don't pass a function in. Call a function that calls your function
 			$scope.imgSlide()
-		}, 5000);	
+		}, 3000);	
 	};
 
 });
